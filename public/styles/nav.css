@@ -3,10 +3,25 @@ nav {
   height: 120px;
   width: 100vw;
   background-color: #4056A1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.5em;
   z-index: 100;
 }
 
-nav span {
+.call-to-action {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+.arrow-down {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+.logo {
   font-family: 'Bungee', cursive;
 }

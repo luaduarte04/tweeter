@@ -1,0 +1,39 @@
+.new-tweet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-tweet textarea {
+  outline: none;
+  resize: none;
+  overflow: auto;
+  height: 4vw;
+  width: 60vw;
+  font-weight: 600;
+  font-size: 1.5em;
+  background-color: #f4f1ec;
+  padding: 5px;
+  padding-bottom: 30px;
+  border: none;
+  border-bottom: solid 6px #545149;
+  margin-top: 2vw;
+}
+
+input[type="text"], select, textarea {
+  color: #545149;
+}
+
+
+.tweet-footer {
+  font-family: 'Bungee', cursive;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.tweet-footer button {
+  color: white;
+  background-color: #4056A1;
+  padding: 5px 8px;
+}
