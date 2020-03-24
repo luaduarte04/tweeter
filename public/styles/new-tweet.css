@@ -1,9 +1,11 @@
+/* DEFINE THE ALIGNMENT FOR ALL ELEMENTS UNDER THIS CLASS */
 .new-tweet {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* GENERAL STYLE FOR TWEET TEXT AREA */
 .new-tweet textarea {
   outline: none;
   resize: none;
@@ -14,17 +16,23 @@
   font-size: 1.5em;
   background-color: #f4f1ec;
   padding: 5px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   border: none;
   border-bottom: solid 6px #545149;
   margin-top: 2vw;
 }
 
+/* CHANGE THE FONT COLOR OF THE TEXT AREA */
 input[type="text"], select, textarea {
   color: #545149;
 }
 
+/* CHANGE THE FONT SIZE OF THE TEXT AREA WHEN ON FOCUS */
+input[type="text"], select, textarea:focus {
+  font-size: 24px;
+}
 
+/* GENERAL STYLE FOR BUTTON AND WORD COUNT */
 .tweet-footer {
   font-family: 'Bungee', cursive;
   display: flex;
@@ -32,6 +40,7 @@ input[type="text"], select, textarea {
   margin-top: 2%;
 }
 
+/* STYLE THE TWEET BUTTON SUBMIT */
 .tweet-footer button {
   color: white;
   background-color: #4056A1;
