@@ -1,0 +1,57 @@
+/* GENERAL STYLE FOR MY TWEET STREAM ARTICLE */
+.tweets-stream {
+  margin-top: 3vw;
+  width: 60vw;
+  border: solid 6px #545149;
+  padding: 30px 20px;
+  margin-bottom: 10%;
+}
+
+/* WHEN THE MAIN CONTAINER IS HOVER SHOW A SHADOW */
+.tweets-stream:hover {
+  -webkit-box-shadow: 10px 10px 0px 0px  rgba(64, 87, 161, 0.5);
+  -moz-box-shadow: 10px 10px 0px 0px  rgba(64, 87, 161, 0.5);
+  box-shadow: 10px 10px 0px 0px  rgba(64, 87, 161, 0.5);
+}
+
+/* WHEN THE MAIN CONTAINER IS HOVER SHOW USERNAME */
+.tweets-stream:hover .single-tweet-Username {
+  display: block;
+}
+
+/* DEFINE STYLE FOR THE TWEET TEXT IN THE BOX */
+.tweets-stream p {
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: solid 6px #545149;
+}
+
+/* GENERAL SETTINGS FOR ALIGNMENT FOR THE HEADER ELEMENTS WITHIN THE TWEET STREAM ARTICLE */
+.single-tweet-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HIDES USERNAME AND DEFINE ITS TEXT COLOR */
+.single-tweet-Username {
+  display: none;
+  color:  rgba(64, 87, 161, 0.5);
+}
+
+/* GENERAL SETTINGS FOR ALIGNMENT FOR THE FOOTER ELEMENTS WITHIN THE TWEET STREAM ARTICLE */
+.single-tweet-footer {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+
+/* DEFINE BASE COLOR FOR ICONS */
+.single-tweet-footer a {
+  color: rgba(64, 87, 161);
+}
+
+/* DEFINE ICONS COLORS ON HOVER */
+.single-tweet-footer a:hover {
+  color: #545149;
+}

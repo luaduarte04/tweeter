@@ -1,3 +1,4 @@
+/* GENERAL STYLING FOR HEADER */
 header {
   height: 400px;
   width: 100%;
@@ -6,14 +7,17 @@ header {
   background-color: rgb(255, 208, 108);
 }
 
+/* STYLING FOR HEADER IMG */
 header img {
   margin-top: 2vw;
 }
 
+/* STYLING FOR THE PERSON'S NAME */
 header h2 {
   font-weight: 300;
 }
 
+/* ALINGMENT SETTINGS FOR HEADER ELEMENTS - IT DIDNT WORK WELL WHEN PUT DIRECTLY UNDER HEADER */
 header div {
   display: flex;
   justify-content: center;

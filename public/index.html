@@ -22,8 +22,14 @@
     <!-- HEADER CSS -->
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
-    <!-- NEW TWEET -->
+    <!-- NEW TWEET CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+    <!-- TWEET STREAM CSS -->
+    <link rel="stylesheet" href="/styles/tweet-stream.css" type="text/css" />
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -58,6 +64,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <!-- ADD NEW TWEET FORM -->
       <section class="new-tweet">
         <!-- <h2>Compose Tweet</h2> -->
@@ -69,6 +76,33 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+
+      <!-- TIMELINE WITH STREAM OF TWEETS -->
+      <section class="tweets-stream">
+        <!-- article container base for every tweet -->
+        <article>
+          <!-- article's header container base for every tweet -->
+          <div class="single-tweet-header">
+            <div>
+              <img class="avatar" src="">
+              <span class="single-tweet-name">Rhoda Jacobs</span>
+            </div>
+            <div>
+              <span class="single-tweet-Username">@MrsJacobs</span>
+            </div>
+          </div>
+          <p>hello world!</p>
+          <!-- article's footer container base for every tweet -->
+          <div class="single-tweet-footer">
+            <span>day counter</span>
+            <div>
+              <a href="#"><span class="material-icons">flag</span></a>
+              <a href="#"><span class="material-icons">share</span></a>
+              <a href="#"><span class="material-icons">favorite</span></a>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
   </body>

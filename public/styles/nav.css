@@ -1,3 +1,4 @@
+/* GENERAL STYLING FOR NAV BAR */
 nav {
   color: white;
   height: 120px;
@@ -10,11 +11,13 @@ nav {
   z-index: 100;
 }
 
+/* STYLING FOR CALL TO ACTION ON NAV BAR */
 .call-to-action {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
 
+/* STYLING FOR ARROW UNDER CALL TO ACTION */
 .arrow-down {
   font-size: 2em;
   display: flex;
@@ -22,6 +25,7 @@ nav {
   margin-top: -30px;
 }
 
+/* LOGO STYLING */
 .logo {
   font-family: 'Bungee', cursive;
 }
