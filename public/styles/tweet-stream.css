@@ -1,5 +1,5 @@
 /* GENERAL STYLE FOR MY TWEET STREAM ARTICLE */
-.tweets-stream {
+.tweet {
   margin-top: 3vw;
   width: 60vw;
   border: solid 6px #545149;
@@ -8,19 +8,25 @@
 }
 
 /* WHEN THE MAIN CONTAINER IS HOVER SHOW A SHADOW */
-.tweets-stream:hover {
+.tweet:hover {
   -webkit-box-shadow: 10px 10px 0px 0px  rgba(64, 87, 161, 0.5);
   -moz-box-shadow: 10px 10px 0px 0px  rgba(64, 87, 161, 0.5);
   box-shadow: 10px 10px 0px 0px  rgba(64, 87, 161, 0.5);
 }
 
 /* WHEN THE MAIN CONTAINER IS HOVER SHOW USERNAME */
-.tweets-stream:hover .single-tweet-Username {
+.tweet:hover .single-tweet-Username {
   display: block;
 }
 
+.avatar {
+  height: 30px;
+  width: auto;
+  margin-right: 15px;
+}
+
 /* DEFINE STYLE FOR THE TWEET TEXT IN THE BOX */
-.tweets-stream p {
+.tweet p {
   font-weight: 600;
   padding-bottom: 10px;
   border-bottom: solid 6px #545149;
@@ -35,7 +41,13 @@
 /* HIDES USERNAME AND DEFINE ITS TEXT COLOR */
 .single-tweet-Username {
   display: none;
+  text-decoration: none;
   color:  rgba(64, 87, 161, 0.5);
+}
+
+/* DEFINE USERNAME COLORS ON HOVER */
+.single-tweet-Username:hover {
+  color:  #545149;
 }
 
 /* GENERAL SETTINGS FOR ALIGNMENT FOR THE FOOTER ELEMENTS WITHIN THE TWEET STREAM ARTICLE */
