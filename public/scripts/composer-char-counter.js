@@ -18,8 +18,25 @@ $(document).ready(function() {
       $("output").text(counterLeftSpace).css('color', 'red');
     }
   });
-});
 
-// compare all chars typed with maxWords available, while <= 140 keep removing chars.
-    // if (allCharInBox <= maxWords) {
-    //   let counterLeftSpace = maxWords - allCharInBox;
+  // BIND PRESS ENTER EVENT TO TEXTAREA
+  $('textarea').keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode === 13){
+      $(".tweet-footer button").click()
+      // event.stopPropagation();
+    }
+  });
+
+  // CANCEL COUNT WHEN KEY BACKSPACE IS DOWN IN TEST AREA
+  $(function($) {
+    let input = $('#myInput');
+    input.on('keydown', function() {
+      let key = event.keyCode || event.charCode;
+  
+      if( key === 8 || key === 46 ) {
+        return false;
+      }
+    });
+  });
+});

@@ -37,6 +37,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   padding: 5%;
+  margin-top: 120px;
 }
 
 /* GENERAL STYLING FOR MAIN TWEET RELATED SUTFF CONTAINER */

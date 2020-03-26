@@ -4,7 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
 const createTweetElement = function(tweetObj) {
   // create the HTML for one article object
 
@@ -28,7 +27,7 @@ const createTweetElement = function(tweetObj) {
   let $tweetText = $('<p>').text(tweetObj.content.text);
   let $divFooter = $('<div>').addClass('single-tweet-footer');
     $('<span>')
-    .text(tweetObj.created_at)
+    .text(moment(tweetObj.created_at).startOf('day').fromNow())
     .appendTo($divFooter);
     let $divFooterIcons = $('<div>');
       let $linkIconFlag1 = $('<a>').attr('href', '#');
