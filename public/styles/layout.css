@@ -33,27 +33,32 @@ body {
 
 /* GENERAL STYLING FOR MAIN CONTAINER */
 main {
-  width: 90%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5%;
 }
 
-/*
-main {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-body {
-  color: #545149;
-  background-color: #f4f1ec;
-  font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+/* GENERAL STYLING FOR MAIN TWEET RELATED SUTFF CONTAINER */
+.container-for-tweet {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}*/
+}
+
+
+/* ////////////////////////////////////// */
+/* ////////////MEDIA QUERIES//////////// */
+/* //////////////////////////////////// */
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+  /* Write Tablet only CSS here */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0;
+  }
+}

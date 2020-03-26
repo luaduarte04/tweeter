@@ -54,65 +54,66 @@
       </div>
     </nav>
 
-    <!-- HERE START THE HEADER -->
-    <header>
-      <div>
-        <img src="/images/profile-hex.png"> 
-      </div>
-      <!-- <br> -->
-      <div>
-        <h2><span class="first-word-bolder">Your</span> Name</h2>
-      </div>
-    </header>
-
     <!-- Page-specific (main) content here -->
     <main class="container">
-
-      <!-- ADD NEW TWEET FORM -->
-      <section class="new-tweet">
-        <div id="error-addText">
-          <span class="material-icons">warning</span><p>Please add some text!</p><span class="material-icons">warning</span>
+      <!-- HERE START THE HEADER -->
+      <header>
+        <div>
+          <img src="/images/profile-hex.png"> 
         </div>
-        <div id="error-overCount">
-          <span class="material-icons">warning</span><p>Your tweet is too long! Please make it shorter!</p><span class="material-icons">warning</span>
+        <!-- <br> -->
+        <div>
+          <h2><span class="first-word-bolder">Your</span> Name</h2>
         </div>
-        <!-- <h2>Compose Tweet</h2> -->
-        <form id="submit-tweet">
-          <!-- <label for="tweet-text">What are you humming about?</label> -->
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <div class="tweet-footer">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
+      </header>
 
-      <!-- TIMELINE WITH STREAM OF TWEETS -->
-      <section id="tweets-container">
-        <!-- article container base for every tweet -->
-        <!-- <article class="tweet">
-          article's header container base for every tweet 
-          <div class="single-tweet-header">
-            <div>
-              <img class="avatar" src="">
-              <span class="single-tweet-name">Rhoda Jacobs</span>
-            </div>
-            <div>
-              <a href="#" class="single-tweet-Username">@MrsJacobs</a>
-            </div>
+      <div class="container-for-tweet">
+        <!-- ADD NEW TWEET FORM -->
+        <section class="new-tweet">
+          <div id="error-addText">
+            <span class="material-icons">warning</span><p>Please add some text!</p><span class="material-icons">warning</span>
           </div>
-          <p>hello world!</p>
-           article's footer container base for every tweet 
-          <div class="single-tweet-footer">
-            <span>day counter</span>
-            <div>
-              <a href="#"><span class="material-icons">flag</span></a>
-              <a href="#"><span class="material-icons">share</span></a>
-              <a href="#"><span class="material-icons">favorite</span></a>
-            </div>
+          <div id="error-overCount">
+            <span class="material-icons">warning</span><p>Your tweet is too long! Please make it shorter!</p><span class="material-icons">warning</span>
           </div>
-        </article> -->
-      </section>
+          <!-- <h2>Compose Tweet</h2> -->
+          <form id="submit-tweet">
+            <!-- <label for="tweet-text">What are you humming about?</label> -->
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <div class="tweet-footer">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+
+        <!-- TIMELINE WITH STREAM OF TWEETS -->
+        <section id="tweets-container">
+          <!-- article container base for every tweet -->
+          <!-- <article class="tweet">
+            article's header container base for every tweet 
+            <div class="single-tweet-header">
+              <div>
+                <img class="avatar" src="">
+                <span class="single-tweet-name">Rhoda Jacobs</span>
+              </div>
+              <div>
+                <a href="#" class="single-tweet-Username">@MrsJacobs</a>
+              </div>
+            </div>
+            <p>hello world!</p>
+            article's footer container base for every tweet 
+            <div class="single-tweet-footer">
+              <span>day counter</span>
+              <div>
+                <a href="#"><span class="material-icons">flag</span></a>
+                <a href="#"><span class="material-icons">share</span></a>
+                <a href="#"><span class="material-icons">favorite</span></a>
+              </div>
+            </div>
+          </article> -->
+        </section>
+      </div>
     </main>
   </body>
 </html>

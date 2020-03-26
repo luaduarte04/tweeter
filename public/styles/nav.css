@@ -39,6 +39,7 @@ nav {
 @media only screen and (max-width: 425px) {
   /* Write smartphone only styles here */
   nav {
+    height: 50px;
     color: #545149;
     display: flex;
     justify-content: center;
@@ -46,6 +47,7 @@ nav {
 
   .logo {
     font-size: 1.5em;
+    border-bottom: solid 2px #5451497c;
   }
 
   .call-to-action {

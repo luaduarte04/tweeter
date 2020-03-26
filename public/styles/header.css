@@ -5,12 +5,12 @@ header {
   background-image: url("/images/asfalt-light.png");
   background-size: cover;
   background-color: rgb(255, 208, 108);
-  margin-top: 5%;
+  margin-right: 10%;
 }
 
 /* STYLING FOR HEADER IMG */
 header img {
-  margin-top: 3vw;
+  margin-top: 2vw;
 }
 
 /* STYLING FOR THE PERSON'S NAME */
@@ -33,31 +33,30 @@ header div {
 /* Another smartphone breakpoint is maximum width of around 420px */
 @media only screen and (max-width: 425px) {
   /* Write smartphone only styles here */
-  
+  header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header h2 {
+    font-size: 30px;
+  }
+
+  header img {
+    height: 15vw;
+    width: auto;
+    margin-right: 50%;
+  }
 }
 
 /* Tablet: minimum width of 768px to maximum width of 1024px */
 @media only screen and (max-width: 1024px) {
   /* Write Tablet only CSS here */
   header {
-    height: 400px;
-    width: 100%;
-    background-image: url("/images/asfalt-light.png");
-    background-size: cover;
-    background-color: rgb(255, 208, 108);
-  }
-
-  header img {
-    margin-top: 0;
-  }
-
-  header h2 {
-    font-weight: 300;
-  }
-
-  header div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100vw;
+    margin-right: 0;
   }
 }

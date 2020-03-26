@@ -69,3 +69,20 @@
 .single-tweet-footer a:hover {
   color: #545149;
 }
+
+
+/* ////////////////////////////////////// */
+/* ////////////MEDIA QUERIES//////////// */
+/* //////////////////////////////////// */
+
+/* Another smartphone breakpoint is maximum width of around 420px */
+@media only screen and (max-width: 425px) {
+  /* Write smartphone only styles here */
+  .tweet p {
+    border-bottom: solid 4px #545149;
+  }
+
+  .tweet {
+    border: solid 4px #545149;
+  }
+}
