@@ -1,0 +1,68 @@
+#error-addText, #error-overCount {
+  width: 100%;
+  height: auto;
+  color: #e65e35;
+  font-size: 1.5em;
+  font-weight: 600;
+  border: solid 6px #e65e35;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 3%;
+  margin-top: 5%;
+}
+
+#error-addText .material-icons {
+  height: 8vw;
+  width: auto;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+#error-overCount .material-icons {
+  height: 8vw;
+  width: auto;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+/* ////////////////////////////////////// */
+/* ////////////MEDIA QUERIES//////////// */
+/* //////////////////////////////////// */
+
+/* Smartphones: minimum width of 320px to maximum width of around 420px */
+@media only screen and (min-width: 320px and max-width: 420px) {
+  /* Write smartphone only styles here */
+}
+
+/* Another smartphone breakpoint is maximum width of around 420px */
+@media only screen and (max-width: 420px) {
+  /* Write smartphone only styles here */
+}
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+@media only screen and (min-width: 768px and max-width: 1024px) {
+  /* Write Tablet only CSS here */
+}
+
+/* Another tablet breakpoint is maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+  /* Write CSS rules that target Tablets screen sizes downwards - including smartphones */
+}
+
+/* Another tablet breakpoint is minimum width of 768px */
+@media only screen and (min-width: 768px) {
+  /* Write CSS rules that target Tablets screen sizes upwards - including desktops */
+}
+
+/* Laptops / Desktops: minimum width of 1024px */
+@media only screen and (min-width: 1024px) {
+  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+}
+
+/* Laptops / Desktops: minimum width of 960px */
+@media only screen and (min-width: 960px) {
+  /* Write CSS rules that target small laptop screen sizes and beyond */
+}

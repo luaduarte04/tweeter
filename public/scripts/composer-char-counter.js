@@ -20,7 +20,6 @@ $(document).ready(function() {
   });
 });
 
-
 // compare all chars typed with maxWords available, while <= 140 keep removing chars.
     // if (allCharInBox <= maxWords) {
     //   let counterLeftSpace = maxWords - allCharInBox;

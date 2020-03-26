@@ -29,3 +29,35 @@ nav {
 .logo {
   font-family: 'Bungee', cursive;
 }
+
+
+/* ////////////////////////////////////// */
+/* ////////////MEDIA QUERIES//////////// */
+/* //////////////////////////////////// */
+
+/* Another smartphone breakpoint is maximum width of around 420px */
+@media only screen and (max-width: 425px) {
+  /* Write smartphone only styles here */
+  nav {
+    color: #545149;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .call-to-action {
+    display: none;
+  }
+}
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+  /* Write Tablet only CSS here */
+  nav {
+    color: #545149;
+    background-color: rgb(255, 208, 108);
+  }
+}

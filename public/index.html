@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- VIEWPORT META TAG -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
@@ -27,6 +27,9 @@
 
     <!-- TWEET STREAM CSS -->
     <link rel="stylesheet" href="/styles/tweet-stream.css" type="text/css" />
+
+    <!-- ERROR ALERT CSS -->
+    <link rel="stylesheet" href="/styles/error-alert.css" type="text/css" />
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -67,6 +70,12 @@
 
       <!-- ADD NEW TWEET FORM -->
       <section class="new-tweet">
+        <div id="error-addText">
+          <span class="material-icons">warning</span><p>Please add some text!</p><span class="material-icons">warning</span>
+        </div>
+        <div id="error-overCount">
+          <span class="material-icons">warning</span><p>Your tweet is too long! Please make it shorter!</p><span class="material-icons">warning</span>
+        </div>
         <!-- <h2>Compose Tweet</h2> -->
         <form id="submit-tweet">
           <!-- <label for="tweet-text">What are you humming about?</label> -->

@@ -35,7 +35,9 @@
 /* GENERAL SETTINGS FOR ALIGNMENT FOR THE HEADER ELEMENTS WITHIN THE TWEET STREAM ARTICLE */
 .single-tweet-header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* HIDES USERNAME AND DEFINE ITS TEXT COLOR */

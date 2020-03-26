@@ -1,6 +1,7 @@
 /* DEFINE THE ALIGNMENT FOR ALL ELEMENTS UNDER THIS CLASS */
 .new-tweet {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
