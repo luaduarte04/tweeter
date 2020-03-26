@@ -5,11 +5,13 @@
  */
 
 // THIS FUNCTION WILL CREATE THE HTML ELEMENTS FOR A NEW TWEET
+// TEMPLATE STILL SAVED AND COMMENTED IN INDEX.HTML
 const createTweetElement = function(tweetObj) {
   
   // create the HTML for one article object
   let $tweet = $('<article>').addClass('tweet');
 
+  // create the header part of the tweet article - avatar, name and username
   let $divHeader = $('<div>').addClass('single-tweet-header');
   let $divHeaderAvatarAndName = $('<div>');
     $('<img>')
@@ -25,7 +27,9 @@ const createTweetElement = function(tweetObj) {
       .text(tweetObj.user.handle)
       .attr('href', '#')
       .appendTo($divHeaderUsername);
+  // create the text area where the tweet text is attached to
   let $tweetText = $('<p>').text(tweetObj.content.text);
+  // create the footer part of the tweet article - date, and buttons
   let $divFooter = $('<div>').addClass('single-tweet-footer');
     $('<span>')
       .text(moment(tweetObj.created_at).startOf('day').fromNow())
@@ -46,7 +50,8 @@ const createTweetElement = function(tweetObj) {
           .addClass('material-icons')
           .text('favorite')
           .appendTo($linkIconFavorite3);
-      
+  
+  // this closes all elements appenddint to its parent
   $divHeaderAvatarAndName.appendTo($divHeader);
   $divHeaderUsername.appendTo($divHeader);
   $divHeader.appendTo($tweet);
@@ -57,9 +62,11 @@ const createTweetElement = function(tweetObj) {
   $divFooterIcons.appendTo($divFooter);
   $divFooter.appendTo($tweet);
 
+  // return final tweet element
   return $tweet;
 };
 
+// FUNCTION TO RENDER ALL NEW TWEET TEXT COMMING FROM THE TEXT AREA
 const renderTweets = function(tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
@@ -70,6 +77,7 @@ const renderTweets = function(tweets) {
   });
 };
 
+// FUNCTION DEALS WITH THE GET REQUEST OF SAVED TWEETS RENDERING TO TIMELINE
 const requestTweets = (url) => {
   // issue the request with jQuery Ajax
   $.ajax({
@@ -90,26 +98,27 @@ const requestTweets = (url) => {
     });
 };
 
+// FUNCTION TO POST ALL NEW TWEET WROTE IN TEXT AREA
 const postTweets = function() {
   // event listener for click on the link
   $('#submit-tweet').submit(function(event) {
-    // defaut the default behavior of the link
+    // prevent the default behavior of the link
     event.preventDefault();
     const tweetTextArea = $('#tweet-text').val();
 
+    // in case of errors - empty text area, null or over the count limit
     if (tweetTextArea === "" || tweetTextArea === null) {
-      //alert("Please add some text!");
       $('#error-addText').slideDown("slow");
       $("#submit-tweet").click(function() {
         $('#error-addText').hide();
       });
     } else if (tweetTextArea.length > 140) {
-      //alert("Your tweet is too long! Please make it shorter!");
       $('#error-overCount').slideDown("slow");
       $("#submit-tweet").click(function() {
         $('#error-overCount').hide();
       });
     } else {
+      // if all is good then post tweet and clean text area
       $.ajax({
         type: "POST",
         url: '/tweets',
@@ -123,9 +132,14 @@ const postTweets = function() {
   });
 };
 
+// WHEN DOCUMENT IS READY DO THE FOLLOWING
 $(document).ready(function() {
+  // hide alerts
   $('#error-addText').hide();
   $('#error-overCount').hide();
+
+  // load tweets to timeline
   requestTweets('/tweets');
+  // post new tweets to timeline
   postTweets();
 });

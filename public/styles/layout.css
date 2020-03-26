@@ -53,17 +53,15 @@ main {
 /* ////////////MEDIA QUERIES//////////// */
 /* //////////////////////////////////// */
 
-/* Another smartphone breakpoint is maximum width of around 420px */
+/* breakpoint is maximum width of around 420px */
 @media only screen and (max-width: 425px) {
-  /* Write smartphone only styles here */
   main {
     margin-top: 50px;
   }
 }
 
-/* Tablet: minimum width of 768px to maximum width of 1024px */
+/* breakpoint maximum width of 1024px */
 @media only screen and (max-width: 1024px) {
-  /* Write Tablet only CSS here */
   main {
     display: flex;
     flex-direction: column;

@@ -1,3 +1,4 @@
+/* GENERAL STYLING FOR ALERT BOX */
 #error-addText, #error-overCount {
   width: 100%;
   height: 100px;
@@ -14,6 +15,7 @@
   text-align: center;
 }
 
+/* GENERAL STYLING FOR ALERT ICON - EMPTY STRING OR NULL */
 #error-addText .material-icons {
   height: 8vw;
   width: auto;
@@ -22,6 +24,7 @@
   font-size: 1em;
 }
 
+/* GENERAL STYLING FOR ALERT ICON - OVER COUNTER LIMIT */
 #error-overCount .material-icons {
   height: 8vw;
   width: auto;
@@ -35,18 +38,16 @@
 /* ////////////MEDIA QUERIES//////////// */
 /* //////////////////////////////////// */
 
-/* Another smartphone breakpoint is maximum width of around 420px */
+/* breakpoint is maximum width of around 420px */
 @media only screen and (max-width: 425px) {
-  /* Write smartphone only styles here */
   #error-addText, #error-overCount {
     border: solid 4px #e65e35;
     font-size: 24px;
   }
 }
 
-/* Tablet: minimum width of 768px to maximum width of 1024px */
+/* breakpoint maximum width of 1024px */
 @media only screen and (max-width: 1024px) {
-  /* Write Tablet only CSS here */
   #error-addText, #error-overCount {
     width: 80%;
     font-size: 1em;
