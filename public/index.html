@@ -60,31 +60,34 @@
       </div>
     </nav>
 
-    <!-- Page-specific (main) content here -->
+    <!-- PAGE-SPECIFIC (MAIN) CONTENT HERE -->
     <main class="container">
       <!-- HERE START THE HEADER -->
       <header>
+        <!-- user's main avatar -->
         <div>
           <img src="/images/profile-hex.png"> 
         </div>
-        <!-- <br> -->
+        <!-- user's main name -->
         <div>
           <h2><span class="first-word-bolder">Your</span> Name</h2>
         </div>
       </header>
 
+      <!-- THIS CONTAINER HAS ALL TWEET RELATED CONTENT -->
       <div class="container-for-tweet">
         <!-- ADD NEW TWEET FORM -->
         <section class="new-tweet">
+          <!-- error element - empty text area -->
           <div id="error-addText">
             <span class="material-icons">warning</span><p>Please add some text!</p><span class="material-icons">warning</span>
           </div>
+          <!-- error element - over count limit -->
           <div id="error-overCount">
             <span class="material-icons">warning</span><p>Your tweet is too long! Please make it shorter!</p><span class="material-icons">warning</span>
           </div>
-          <!-- <h2>Compose Tweet</h2> -->
+          <!-- form element start in here -->
           <form id="submit-tweet">
-            <!-- <label for="tweet-text">What are you humming about?</label> -->
             <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
             <div class="tweet-footer">
               <button type="submit">Tweet</button>

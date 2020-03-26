@@ -5,7 +5,7 @@ $(document).ready(function() {
   const maxWords = 140;
 
   // COUNT WHEN KEY IS UP IN TEST AREA
-  $("textarea").on("keyup", function () {
+  $("textarea").on("keyup", function() {
     // Finding total chars in text box
     const allCharInBox = $(this).val().length;
 
@@ -20,10 +20,10 @@ $(document).ready(function() {
   });
 
   // BIND PRESS ENTER EVENT TO TEXTAREA
-  $('textarea').keypress(function(event){
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-    if(keycode === 13){
-      $(".tweet-footer button").click()
+  $('textarea').keypress(function(event) {
+    let keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode === 13) {
+      $(".tweet-footer button").click();
       // event.stopPropagation();
     }
   });
@@ -31,10 +31,9 @@ $(document).ready(function() {
   // CANCEL COUNT WHEN KEY BACKSPACE IS DOWN IN TEST AREA
   $(function($) {
     let input = $('#myInput');
-    input.on('keydown', function() {
+    input.on('keydown', function(event) {
       let key = event.keyCode || event.charCode;
-  
-      if( key === 8 || key === 46 ) {
+      if (key === 8 || key === 46) {
         return false;
       }
     });

@@ -4,9 +4,10 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// THIS FUNCTION WILL CREATE THE HTML ELEMENTS FOR A NEW TWEET
 const createTweetElement = function(tweetObj) {
+  
   // create the HTML for one article object
-
   let $tweet = $('<article>').addClass('tweet');
 
   let $divHeader = $('<div>').addClass('single-tweet-header');
@@ -20,31 +21,31 @@ const createTweetElement = function(tweetObj) {
       .appendTo($divHeaderAvatarAndName);
   let $divHeaderUsername = $('<div>');
     $('<span>')
-    .addClass('single-tweet-Username')
-    .text(tweetObj.user.handle)
-    .attr('href', '#')
-    .appendTo($divHeaderUsername);
+      .addClass('single-tweet-Username')
+      .text(tweetObj.user.handle)
+      .attr('href', '#')
+      .appendTo($divHeaderUsername);
   let $tweetText = $('<p>').text(tweetObj.content.text);
   let $divFooter = $('<div>').addClass('single-tweet-footer');
     $('<span>')
-    .text(moment(tweetObj.created_at).startOf('day').fromNow())
-    .appendTo($divFooter);
+      .text(moment(tweetObj.created_at).startOf('day').fromNow())
+      .appendTo($divFooter);
     let $divFooterIcons = $('<div>');
       let $linkIconFlag1 = $('<a>').attr('href', '#');
         $('<span>')
-        .addClass('material-icons')
-        .text('flag')
-        .appendTo($linkIconFlag1);
+          .addClass('material-icons')
+          .text('flag')
+          .appendTo($linkIconFlag1);
       let $linkIconShare2 = $('<a>').attr('href', '#');
         $('<span>')
-        .addClass('material-icons')
-        .text('share')
-        .appendTo($linkIconShare2);
+          .addClass('material-icons')
+          .text('share')
+          .appendTo($linkIconShare2);
       let $linkIconFavorite3 = $('<a>').attr('href', '#');
         $('<span>')
-        .addClass('material-icons')
-        .text('favorite')
-        .appendTo($linkIconFavorite3);
+          .addClass('material-icons')
+          .text('favorite')
+          .appendTo($linkIconFavorite3);
       
   $divHeaderAvatarAndName.appendTo($divHeader);
   $divHeaderUsername.appendTo($divHeader);
@@ -57,17 +58,17 @@ const createTweetElement = function(tweetObj) {
   $divFooter.appendTo($tweet);
 
   return $tweet;
-}
+};
 
 const renderTweets = function(tweets) {
-  // loops through tweets 
+  // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
   $('#tweets-container').empty();
   $.each(tweets, function(index, tweetObj) {
     $('#tweets-container').prepend(createTweetElement(tweetObj));
   });
-}
+};
 
 const requestTweets = (url) => {
   // issue the request with jQuery Ajax
@@ -77,7 +78,7 @@ const requestTweets = (url) => {
   })
     .done(function(result) {
       // Success. Getting the result from the request
-      renderTweets(result);;
+      renderTweets(result);
     })
     .fail(function(error) {
       // Problem with the request
@@ -98,14 +99,14 @@ const postTweets = function() {
 
     if (tweetTextArea === "" || tweetTextArea === null) {
       //alert("Please add some text!");
-      $('#error-addText').slideDown( "slow");
-      $("#submit-tweet").click(function(){
+      $('#error-addText').slideDown("slow");
+      $("#submit-tweet").click(function() {
         $('#error-addText').hide();
       });
     } else if (tweetTextArea.length > 140) {
       //alert("Your tweet is too long! Please make it shorter!");
-      $('#error-overCount').slideDown( "slow");
-      $("#submit-tweet").click(function(){
+      $('#error-overCount').slideDown("slow");
+      $("#submit-tweet").click(function() {
         $('#error-overCount').hide();
       });
     } else {
@@ -113,15 +114,14 @@ const postTweets = function() {
         type: "POST",
         url: '/tweets',
         data: $(this).serialize()
-      }).then(function (submitTweet) {
+      }).then(function(submitTweet) {
         console.log('Success: ', submitTweet);
         requestTweets('/tweets');
       });
       $("#tweet-text").val('');
     }
   });
-
-}
+};
 
 $(document).ready(function() {
   $('#error-addText').hide();
