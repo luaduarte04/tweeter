@@ -6,10 +6,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["Screenshot of URLs page"](https://github.com/luaduarte04/tinyapp/blob/master/docs/urls-page.png?raw=true)
-!["Screenshot of URLs page when logged in"](https://github.com/luaduarte04/tinyapp/blob/master/docs/urls-page-loogedIn.png?raw=true)
-!["Screenshot of newURLs page"](https://github.com/luaduarte04/tinyapp/blob/master/docs/urls-page.png?raw=true)
-!["Screenshot of editURLs page"](https://github.com/luaduarte04/tinyapp/blob/master/docs/editURL-page.png?raw=true)
+!["Screenshot of Tweeter on big screens"](https://github.com/luaduarte04/tweeter/blob/master/public/images/big-screen.png?raw=true)
+!["Screenshot of error message - no text was typed into text area"](https://github.com/luaduarte04/tweeter/blob/master/public/images/error-message-1.png?raw=true)
+!["Screenshot of error message - text exceeds counter limit"](https://github.com/luaduarte04/tweeter/blob/master/public/images/error-message-2.png?raw=true)
+!["Screenshot of Tweeter on medium range screens - small laptops / tablets"](https://github.com/luaduarte04/tweeter/blob/master/public/images/medium-screen.png?raw=true)
+!["Screenshot of Tweeter on small screens - phones"](https://github.com/luaduarte04/tweeter/blob/master/public/images/small-screen.png?raw=true)
 
 ## Getting Started
 
