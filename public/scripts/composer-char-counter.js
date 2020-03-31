@@ -5,7 +5,7 @@ $(document).ready(function() {
   const maxWords = 140;
 
   // COUNT WHEN KEY IS UP IN TEST AREA
-  $("textarea").on("keyup", function() {
+  $("textarea").on("keydown", function() {
     // Finding total chars in text box
     const allCharInBox = $(this).val().length;
 
@@ -16,6 +16,8 @@ $(document).ready(function() {
     // if they are under 0 turn red
     if (maxWords < allCharInBox) {
       $("output").text(counterLeftSpace).css('color', 'red');
+    } else {
+      $("output").text(counterLeftSpace).css('color', '#545149');
     }
   });
 
@@ -24,7 +26,6 @@ $(document).ready(function() {
     let keycode = (event.keyCode ? event.keyCode : event.which);
     if (keycode === 13) {
       $(".tweet-footer button").click();
-      // event.stopPropagation();
     }
   });
 

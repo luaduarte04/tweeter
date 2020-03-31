@@ -30,6 +30,7 @@
   font-weight: 600;
   padding-bottom: 10px;
   border-bottom: solid 6px #545149;
+  overflow-wrap: break-word;
 }
 
 /* GENERAL SETTINGS FOR ALIGNMENT FOR THE HEADER ELEMENTS WITHIN THE TWEET STREAM ARTICLE */

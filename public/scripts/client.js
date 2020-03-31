@@ -66,6 +66,7 @@ const createTweetElement = function(tweetObj) {
   return $tweet;
 };
 
+
 // FUNCTION TO RENDER ALL NEW TWEET TEXT COMMING FROM THE TEXT AREA
 const renderTweets = function(tweets) {
   // loops through tweets
@@ -128,15 +129,22 @@ const postTweets = function() {
         requestTweets('/tweets');
       });
       $("#tweet-text").val('');
+      $('.counter').text(140);
     }
   });
 };
 
 // WHEN DOCUMENT IS READY DO THE FOLLOWING
 $(document).ready(function() {
-  // hide alerts
+  // hide alerts and tweet box
   $('#error-addText').hide();
   $('#error-overCount').hide();
+  $('.new-tweet').hide();
+
+  // show tweet box on click
+  $(".call-to-action").click(function() {
+    $('.new-tweet').show();
+  });
 
   // load tweets to timeline
   requestTweets('/tweets');

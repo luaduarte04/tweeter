@@ -23,7 +23,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Dependencies
 
-- Express
-- Body Parser
-- Chance
+- Express - ^4.13.4
+- Body Parser - ^1.15.2
+- Chance - ^1.0.2
 - Node 5.10.x or above
+- Animate - ^3.7.2
+- md5 - ^2.1.0
